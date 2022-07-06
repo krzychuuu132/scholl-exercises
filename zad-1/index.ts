@@ -1,13 +1,6 @@
-import { Filip } from "./Filip";
-import { Krzysiek } from "./Krzysiek";
-import { Olaf } from "./Olaf";
+import { Calculations } from "./Calculations";
 
-// Zad 1
-const krzysiek =  new Krzysiek()
-console.log(krzysiek.move(), krzysiek.speak())
+const CalculationsInstance = new Calculations();
 
-const filip =  new Filip()
-console.log(filip.move(), filip.speak())
-
-const olaf =  new Olaf()
-console.log(olaf.move(), olaf.speak())
+CalculationsInstance.calculate(4, 5, 2);
+CalculationsInstance.checkRoot();
